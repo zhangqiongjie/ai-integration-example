@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Chat</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>AI Voice Chat</h1>
+            <div class="controls">
+                <div class="provider-select">
+                    <label for="provider">Provider:</label>
+                    <select id="provider">
+                        <option value="openai">OpenAI</option>
+                        <option value="gemini">Gemini</option>
+                    </select>
+                </div>
+                <button id="voice-toggle" class="btn btn-icon" title="Toggle voice output">
+                    <span id="voice-icon">&#128264;</span>
+                </button>
+                <span id="status" class="status disconnected">Disconnected</span>
+            </div>
+        </header>
+
+        <main id="messages" class="messages"></main>
+
+        <footer>
+            <div class="input-area">
+                <button id="mic-btn" class="btn btn-icon btn-mic" title="Hold to record">
+                    <span>&#127908;</span>
+                </button>
+                <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
+                <button id="send-btn" class="btn btn-primary">Send</button>
+            </div>
+            <div id="recording-indicator" class="recording-indicator hidden">
+                <span class="pulse"></span> Recording...
+            </div>
+        </footer>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

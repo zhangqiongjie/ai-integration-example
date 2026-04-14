@@ -1,0 +1,17 @@
+.git/
+.gitignore
+.env
+.env.*
+!.env.example
+*.md
+specs/
+.specify/
+.windsurf/
+*.test
+*.out
+coverage.*
+*.coverprofile
+Dockerfile
+docker-compose.yml
+.dockerignore
+LICENSE
