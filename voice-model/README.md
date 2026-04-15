@@ -2,6 +2,10 @@
 
 A Go web application that enables text and voice conversations with AI models (OpenAI, Google Gemini) through a browser-based interface.
 
+## Screenshot
+
+![AI Voice Chat UI](ai-voice-chat.png)
+
 ## Features
 
 - **Multi-turn text chat** with AI via OpenAI GPT or Google Gemini
